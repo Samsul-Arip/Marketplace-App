@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorAccent"
+            />
+        <ImageView
+            android:id="@+id/imvUser"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/img_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsul Aripin"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/imvUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUser"
+            android:ems="20"
+            android:background="@drawable/button_corners_white"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="KEMBALI KE BERANDA"
+            android:drawableLeft="@drawable/ic_view_back"
+            android:paddingLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info Profile"
+            android:textSize="22sp"
+            android:layout_below="@id/btnBack"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"/>
+
+        <LinearLayout
+            android:id="@+id/linUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/tvInfo"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="50dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imvName"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_img_name"
+                    />
+                <TextView
+                    android:id="@+id/labelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:layout_toRightOf="@id/imvName"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Samsul Aripin"
+                    android:layout_toRightOf="@id/imvName"
+                    android:layout_below="@id/labelName"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imvGender"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_img_gender"
+                    />
+                <TextView
+                    android:id="@+id/labelGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:layout_toRightOf="@id/imvGender"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki - Laki"
+                    android:layout_toRightOf="@id/imvGender"
+                    android:layout_below="@id/labelGender"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imvAlamat"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_img_address"
+                    />
+                <TextView
+                    android:id="@+id/labelAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:layout_toRightOf="@id/imvAlamat"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tvAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desa. Alas pandan, Kec. Pakuniran, Kab.Probolinggo"
+                    android:layout_toRightOf="@id/imvAlamat"
+                    android:layout_below="@id/labelAlamat"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linUser"
+            android:text="LogOut"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
